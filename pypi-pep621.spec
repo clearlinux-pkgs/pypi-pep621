@@ -6,7 +6,7 @@
 #
 Name     : pypi-pep621
 Version  : 0.4.0
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/b7/6b/ef6e5536093c08c4b542b16410452572a0c8fd605f9e182da84358e74ad3/pep621-0.4.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b7/6b/ef6e5536093c08c4b542b16410452572a0c8fd605f9e182da84358e74ad3/pep621-0.4.0.tar.gz
 Source1  : https://files.pythonhosted.org/packages/b7/6b/ef6e5536093c08c4b542b16410452572a0c8fd605f9e182da84358e74ad3/pep621-0.4.0.tar.gz.asc
@@ -66,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1640196835
+export SOURCE_DATE_EPOCH=1640197136
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
