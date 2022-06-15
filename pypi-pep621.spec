@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xF893C674816AA95D (filipe@lains.me)
 #
 Name     : pypi-pep621
-Version  : 0.4.0.post1
-Release  : 4
-URL      : https://files.pythonhosted.org/packages/17/1d/dff5b1c4b1470fd8d8ba311c51bbe03f47950334fd8da53d1975506e3677/pep621-0.4.0.post1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/17/1d/dff5b1c4b1470fd8d8ba311c51bbe03f47950334fd8da53d1975506e3677/pep621-0.4.0.post1.tar.gz
-Source1  : https://files.pythonhosted.org/packages/17/1d/dff5b1c4b1470fd8d8ba311c51bbe03f47950334fd8da53d1975506e3677/pep621-0.4.0.post1.tar.gz.asc
+Version  : 0.4.0.post2
+Release  : 5
+URL      : https://files.pythonhosted.org/packages/92/2d/4718504232643fb69291485f509e0e72b8135de19fceaf4d03c8c16f268c/pep621-0.4.0.post2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/92/2d/4718504232643fb69291485f509e0e72b8135de19fceaf4d03c8c16f268c/pep621-0.4.0.post2.tar.gz
+Source1  : https://files.pythonhosted.org/packages/92/2d/4718504232643fb69291485f509e0e72b8135de19fceaf4d03c8c16f268c/pep621-0.4.0.post2.tar.gz.asc
 Summary  : PEP 621 metadata parsing
 Group    : Development/Tools
 License  : MIT
@@ -58,10 +58,10 @@ python3 components for the pypi-pep621 package.
 
 
 %prep
-%setup -q -n pep621-0.4.0.post1
-cd %{_builddir}/pep621-0.4.0.post1
+%setup -q -n pep621-0.4.0.post2
+cd %{_builddir}/pep621-0.4.0.post2
 pushd ..
-cp -a pep621-0.4.0.post1 buildavx2
+cp -a pep621-0.4.0.post2 buildavx2
 popd
 
 %build
@@ -69,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1654897077
+export SOURCE_DATE_EPOCH=1655255850
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -94,7 +94,7 @@ popd
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-pep621
-cp %{_builddir}/pep621-0.4.0.post1/LICENSE %{buildroot}/usr/share/package-licenses/pypi-pep621/4339a5c41946d5ce6e23a8b8c4fff00d838d40c9
+cp %{_builddir}/pep621-0.4.0.post2/LICENSE %{buildroot}/usr/share/package-licenses/pypi-pep621/4339a5c41946d5ce6e23a8b8c4fff00d838d40c9
 pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :

@@ -1,5 +1,5 @@
 PKG_NAME := pypi-pep621
-URL = https://files.pythonhosted.org/packages/17/1d/dff5b1c4b1470fd8d8ba311c51bbe03f47950334fd8da53d1975506e3677/pep621-0.4.0.post1.tar.gz
+URL = https://files.pythonhosted.org/packages/92/2d/4718504232643fb69291485f509e0e72b8135de19fceaf4d03c8c16f268c/pep621-0.4.0.post2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
